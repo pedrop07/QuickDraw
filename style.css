@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@500&display=swap');
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Chakra Petch', sans-serif;
+}
+
+h1{
+  text-align: center;
+  color: #fff;
+}
+
+body{
+  background-color: var(--primary-color);
+}
+
+*::-webkit-scrollbar {
+  display: none;
+}
+
+button{
+  cursor: pointer;
+  border: none;
+  outline: none;
+  padding: 6px 12px;
+}
+
+.head{
+  padding: 1rem;
+  background-color: var(--second-color);
+}
+
+/* Colors */
+
+:root {
+  --primary-color: #171717;
+  --second-color: #212121;
+}
+
+/* Aside */
+
+aside {
+  background-color: var(--second-color);
+  color: #fcfcfc;
+  position: absolute;
+  top: 15%;
+  width: 12rem;
+  padding: 1rem;
+  overflow: hidden;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.aside{
+  display: flex;
+  justify-content: flex-end;
+}
+
+.inputWrap{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4rem;
+}
+
+input[type="color"] {
+  outline: none;
+  border: none;
+  background-color: transparent;
+  height: 3rem;
+  width: 100%;
+  cursor: pointer;
+}
+
+.align{
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+
+/* Area do Desenho  */
+
+.cleanDraw{
+  margin-top: 2rem;
+  margin-bottom: 10px;
+  color: #fff;
+  font-size: 1.4rem;
+  border-radius: 2px;
+  background: none;
+  transition: all 0.2s ease-out;
+}
+
+.cleanDraw:hover{
+  background-color: #fff;
+  color: #0a0a0a;
+}
+
+.draw{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+table {
+  font-family: arial, sans-serif;
+  border: 1px solid black;
+  border-collapse: collapse;
+  background: #fff;
+}
+
+td, th {
+  border: 1px solid #0a0a0a;
+  padding: 12px;
+}

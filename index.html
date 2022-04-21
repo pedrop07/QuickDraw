@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Quick Draw</title>
+</head>
+<body>
+  <div class="head">
+    <h1>Quick Draw</h1>
+  </div>
+  <div class="aside">
+    <aside>
+      <div style="margin-bottom: 2rem;">Escolha suas cores !</div>
+      <div class="inputWrap">
+        <div class="align">
+          <input type="color" class="color1" id="input-color1">
+          <button onclick="selectColor1()">select color</button>
+        </div>
+
+        <div class="align">
+          <input type="color" class="color2" id="input-color2">
+          <button onclick="selectColor2()">select color</button>
+        </div>
+
+        <div class="align">
+          <input type="color" class="color3" id="input-color3">
+          <button onclick="selectColor3()">select color</button>
+        </div>
+
+        <div class="align">
+          <input type="color" class="color4" id="input-color4">
+          <button onclick="selectColor4()">select color</button>
+        </div>
+      </div>
+    </aside>
+  </div>
+
+  <div class="draw">
+    <button class="cleanDraw" onclick="limpar()">LIMPAR</button>
+  </div>
+
+  <script src="createScreen.js"></script>
+  <script src="draw.js"></script>
+</body>
+</html>
