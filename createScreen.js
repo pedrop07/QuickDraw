@@ -4,10 +4,10 @@ const table = document.createElement("table");
 
 let tdCount = 0;
 
-for(let trCount = 0; trCount <= 32; trCount++){
+for(let trCount = 0; trCount <= 31; trCount++){
   const tr = document.createElement("tr");
 
-  for(let tdCount = 0; tdCount <= 32; tdCount++){
+  for(let tdCount = 0; tdCount <= 31; tdCount++){
     let td = document.createElement("td");
     td.classList.add("square");
     tr.appendChild(td);
