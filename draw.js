@@ -10,6 +10,9 @@ const inputColors = document.querySelector(".inputWrap");
 let color = "#000";
 
 
+screen.addEventListener('dragstart', e => e.preventDefault())
+
+
 let onClick = false;
 
 screen.addEventListener('mousedown', () => {
@@ -45,10 +48,14 @@ function selectColor4(){
 }
 
 squares.forEach(square => {
-  square.addEventListener('mouseover', e => {
+  square.addEventListener('mouseover', () => {
     if(onClick) {
       square.style.backgroundColor = color;
     }
+  });
+
+  square.addEventListener('click', () => {
+    square.style.backgroundColor = color;
   });
 })
 
