@@ -83,6 +83,14 @@ input[type="color"] {
   color: #0a0a0a;
 }
 
+.eraser{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    padding-top: 20px;
+}
+
 .draw{
   display: flex;
   flex-direction: column;

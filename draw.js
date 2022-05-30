@@ -65,3 +65,33 @@ function limpar() {
     square.style.backgroundColor = "#FFF";
   })
 }
+
+
+// Borracha
+
+window.addEventListener("keydown", function (event) {
+
+    if(event.code == "ControlLeft" ){
+        squares.forEach(square => {
+            square.addEventListener("mouseover", () => {
+                if(onClick){
+                    square.style.backgroundColor = "white";
+                }
+            })
+        })
+    }
+})
+
+
+window.addEventListener("keyup", function (event) {
+
+    if(event.code == "ControlLeft" ){
+        squares.forEach(square => {
+            square.addEventListener("mouseover", () => {
+                if(onClick){
+                    square.style.backgroundColor = color;
+                }
+            })
+        })
+    }
+})
